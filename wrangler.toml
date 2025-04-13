@@ -1,0 +1,3 @@
+name = "new-proxy2"  # غيّره لاسم الـ Worker بتاعك
+compatibility_date = "2025-04-13"
+main = "worker.js"
