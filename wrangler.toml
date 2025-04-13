@@ -1,6 +1,0 @@
-name = "new-proxy2"  # غيّرها لاسم الـ Worker بتاعك
-compatibility_date = "2025-04-13"
-main = "worker.js"
-
-[build]
-command = ""  # مش محتاجين أمر بناء لأن الكود جاهز
