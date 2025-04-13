@@ -1,0 +1,10 @@
+name = "super-proxy-ahmedy32"
+main = "worker.js"
+compatibility_date = "2025-04-13"
+workers_dev = true
+
+[limits]
+cpu_ms = 1000
+
+[placement]
+mode = "smart"
