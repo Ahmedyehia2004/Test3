@@ -4,4 +4,4 @@ main = "worker.js"
 compatibility_date = "2025-04-14"
 workers_dev = true
 
-routes = ["super-proxy-ahmed1.workers.dev/*"]
+routes = ["super-proxy-ahmed21.workers.dev/*"]
