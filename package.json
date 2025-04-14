@@ -1,0 +1,16 @@
+{
+  "name": "super-proxy-ahmedy-v2",
+  "version": "2.0.0",
+  "description": "Cosmic-grade Cloudflare Worker for 10GB daily downloads",
+  "main": "worker.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "author": "AhmedY332",
+  "license": "MIT"
+}
