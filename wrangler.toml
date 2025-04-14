@@ -1,0 +1,19 @@
+# wrangler.toml
+name = "super-proxy-ahmedyehia-v2"
+main = "worker.js"
+compatibility_date = "2025-04-14"
+workers_dev = true
+
+# إعدادات النشر
+[deployment]
+strategy = "git"
+
+# إعدادات الـ Routes
+[[routes]]
+pattern = "super-proxy-ahmedy332-v2.binep79344.workers.dev/*"
+zone_name = "binep79344.workers.dev"
+
+# إعدادات الأمان
+[security]
+disable_tls_checks = false
+allowed_origins = ["*"]
