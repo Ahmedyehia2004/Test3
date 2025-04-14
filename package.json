@@ -1,6 +1,6 @@
 {
-  "name": "super-proxy-ahmed21",
-  "version": "2.4.2",
+  "name": "ahm1",
+  "version": "2.5.0",
   "description": "Cosmic Cloudflare Worker for 10GB daily mastery",
   "main": "worker.js",
   "scripts": {
@@ -11,6 +11,6 @@
   "devDependencies": {
     "wrangler": "^3.0.0"
   },
-  "author": "Ahmed21",
+  "author": "Ahm1",
   "license": "MIT"
 }
