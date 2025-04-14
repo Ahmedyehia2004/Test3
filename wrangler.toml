@@ -4,6 +4,4 @@ main = "worker.js"
 compatibility_date = "2025-04-14"
 workers_dev = true
 
-# إعدادات الـ Routes
-[[routes]]
-pattern = "super-proxy-ahmedyehia2-v2.workers.dev/*"
+routes = ["super-proxy-ahmedyehia22-v2.workers.dev/*"]
