@@ -12,12 +12,12 @@ async function handleRequest(request) {
     
     // التحقق من الرابط
     if (!target) {
-      return new Response('{"error":"No target URL provided","worker_version":"2.5.0"}', {
+      return new Response('{"error":"No target URL provided","worker_version":"2.6.0"}', {
         status: 400,
         headers: {
           'Content-Type': 'application/json',
           'Access-Control-Allow-Origin': '*',
-          'X-Powered-By': 'Ahm1-CosmicWorker'
+          'X-Powered-By': 'CosmicAhm22-Worker'
         }
       });
     }
@@ -58,14 +58,14 @@ async function handleRequest(request) {
         JSON.stringify({
           error: `Failed to fetch: ${response.status} ${response.statusText}`,
           details: errorDetails,
-          worker_version: '2.5.0'
+          worker_version: '2.6.0'
         }),
         {
           status: response.status,
           headers: {
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*',
-            'X-Powered-By': 'Ahm1-CosmicWorker'
+            'X-Powered-By': 'CosmicAhm22-Worker'
           }
         }
       );
@@ -74,9 +74,9 @@ async function handleRequest(request) {
     // إعداد الاستجابة
     const responseHeaders = new Headers(response.headers);
     responseHeaders.set('Access-Control-Allow-Origin', '*');
-    responseHeaders.set('X-Worker-Version', '2.5.0');
+    responseHeaders.set('X-Worker-Version', seguida: '2.6.0');
     responseHeaders.set('Cache-Control', 'no-store');
-    responseHeaders.set('X-Powered-By', 'Ahm1-CosmicWorker');
+    responseHeaders.set('X-Powered-By', 'CosmicAhm22-Worker');
 
     // Streaming للكفاءة
     return new Response(response.body, {
@@ -90,16 +90,16 @@ async function handleRequest(request) {
       JSON.stringify({
         error: 'Worker error',
         message: error.message,
-        worker_version: '2.5.0'
+        worker_version: '2.6.0'
       }),
       {
         status: 500,
         headers: {
           'Content-Type': 'application/json',
           'Access-Control-Allow-Origin': '*',
-          'X-Powered-By': 'Ahm1-CosmicWorker'
+          'X-Powered-By': 'CosmicAhm22-Worker'
         }
       }
     );
   }
-}
+      }
