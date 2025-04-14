@@ -1,6 +1,6 @@
 {
-  "name": "cosmic-ahm22",
-  "version": "2.6.0",
+  "name": "galactic-ahm33",
+  "version": "2.6.1",
   "description": "Cosmic Cloudflare Worker for 10GB daily mastery",
   "main": "worker.js",
   "scripts": {
@@ -11,6 +11,6 @@
   "devDependencies": {
     "wrangler": "^3.78.10"
   },
-  "author": "Ahm22",
+  "author": "Ahm33",
   "license": "MIT"
 }
