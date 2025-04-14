@@ -1,6 +1,6 @@
 {
-  "name": "super-proxy-ahmedyehia222-v2",
-  "version": "2.4.0",
+  "name": "super-proxy-ahmed10",
+  "version": "2.4.1",
   "description": "Cosmic Cloudflare Worker for 10GB daily mastery",
   "main": "worker.js",
   "scripts": {
