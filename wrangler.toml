@@ -1,4 +1,4 @@
-name = "super-proxy-ahmedy332"
+name = "super-proxy-ahmedy32"
 main = "worker.js"
 compatibility_date = "2025-04-13"
 workers_dev = true
