@@ -1,7 +1,0 @@
-name = "super-proxy-ahmedy332"
-main = "worker.js"
-compatibility_date = "2025-04-13"
-workers_dev = true
-
-[placement]
-mode = "smart"
