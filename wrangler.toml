@@ -1,0 +1,26 @@
+# wrangler.toml
+name = "super-proxy-ahmedy-v2"
+main = "worker.js"
+compatibility_date = "2025-04-14"
+workers_dev = true
+
+# إعدادات النشر
+[deployment]
+strategy = "git"
+
+# إعدادات الـ Routes
+[[routes]]
+pattern = "super-proxy-ahmedy332-v2.binep79344.workers.dev/*"
+zone_name = "binep79344.workers.dev"
+
+# حدود الـ Worker
+[limits]
+cpu_ms = 2000 # زيادة وقت المعالجة للـ 10 جيجا
+memory = 128
+subrequests = 1000 # دعم طلبات فرعية للملفات الكبيرة
+
+# إعدادات الأمان
+[security]
+disable_tls_checks = false
+allowed_origins = ["*"]
+max_request_duration = 120 # 120 ثانية لتحميل الملفات الضخمة
