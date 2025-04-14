@@ -1,5 +1,5 @@
 {
-  "name": "super-proxy-ahmedy-v2",
+  "name": "super-proxy-ahmedy332-v2",
   "version": "2.0.0",
   "description": "Cosmic-grade Cloudflare Worker for 10GB daily downloads",
   "main": "worker.js",
