@@ -1,0 +1,25 @@
+# wrangler.toml
+name = "super-proxy-ahmedy332-v2"
+main = "worker.js"
+compatibility_date = "2025-04-14"
+workers_dev = true
+
+# إعدادات النشر
+[deployment]
+# نشر تلقائي من GitHub
+strategy = "git"
+
+# إعدادات الـ Routes
+[[routes]]
+pattern = "super-proxy-ahmedy332-v2.binep79344.workers.dev/*"
+zone = "binep79344.workers.dev"
+
+# حدود الـ Worker
+[limits]
+cpu_ms = 1000 # زيادة وقت المعالجة لتحميل الملفات الكبيرة
+memory = 128 # ذاكرة كافية
+
+# إعدادات الأمان
+[security]
+disable_tls_checks = false
+allowed_origins = ["*"] # دعم CORS
