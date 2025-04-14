@@ -1,7 +1,5 @@
 # wrangler.toml
-name = "ahm1"
+name = "cosmic-ahm22"
 main = "worker.js"
 compatibility_date = "2025-04-14"
 workers_dev = true
-
-routes = ["ahm1.workers.dev/*"]
