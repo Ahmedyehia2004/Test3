@@ -1,5 +1,5 @@
 # wrangler.toml
-name = "cosmic-ahm22"
+name = "super-proxy-ahmedyehia-v2"
 main = "worker.js"
 compatibility_date = "2025-04-14"
 workers_dev = true
