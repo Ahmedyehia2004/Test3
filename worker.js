@@ -12,12 +12,12 @@ async function handleRequest(request) {
     
     // التحقق من الرابط
     if (!target) {
-      return new Response('{"error":"No target URL provided","worker_version":"2.4.1"}', {
+      return new Response('{"error":"No target URL provided","worker_version":"2.4.2"}', {
         status: 400,
         headers: {
           'Content-Type': 'application/json',
           'Access-Control-Allow-Origin': '*',
-          'X-Powered-By': 'AhmedYehia22-CosmicWorker'
+          'X-Powered-By': 'Ahmed21-CosmicWorker'
         }
       });
     }
@@ -58,14 +58,14 @@ async function handleRequest(request) {
         JSON.stringify({
           error: `Failed to fetch: ${response.status} ${response.statusText}`,
           details: errorDetails,
-          worker_version: '2.4.1'
+          worker_version: '2.4.2'
         }),
         {
           status: response.status,
           headers: {
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*',
-            'X-Powered-By': 'AhmedYehia22-CosmicWorker'
+            'X-Powered-By': 'Ahmed21-CosmicWorker'
           }
         }
       );
@@ -74,9 +74,9 @@ async function handleRequest(request) {
     // إعداد الاستجابة
     const responseHeaders = new Headers(response.headers);
     responseHeaders.set('Access-Control-Allow-Origin', '*');
-    responseHeaders.set('X-Worker-Version', '2.4.1');
+    responseHeaders.set('X-Worker-Version', '2.4.2');
     responseHeaders.set('Cache-Control', 'no-store');
-    responseHeaders.set('X-Powered-By', 'AhmedYehia22-CosmicWorker');
+    responseHeaders.set('X-Powered-By', 'Ahmed21-CosmicWorker');
 
     // Streaming للكفاءة
     return new Response(response.body, {
@@ -90,16 +90,16 @@ async function handleRequest(request) {
       JSON.stringify({
         error: 'Worker error',
         message: error.message,
-        worker_version: '2.4.1'
+        worker_version: '2.4.2'
       }),
       {
         status: 500,
         headers: {
           'Content-Type': 'application/json',
           'Access-Control-Allow-Origin': '*',
-          'X-Powered-By': 'AhmedYehia22-CosmicWorker'
+          'X-Powered-By': 'Ahmed21-CosmicWorker'
         }
       }
     );
   }
-              }
+    }
